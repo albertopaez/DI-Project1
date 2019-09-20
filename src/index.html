@@ -21,10 +21,9 @@
           Normally, this is automatically added upon executing 'ionic cordova build' commands. -->
   <script src="cordova.js"></script>
 
-  <script>function bark(){
-    var audio = document.getElementById("bark");
+  <script>function bark(entrada){
+    var audio = document.getElementById(entrada);
     audio.play();
-    console.log("hola");
   }
   </script>
 

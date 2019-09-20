@@ -1,15 +1,19 @@
 <ion-content>
-
-        
-
+    
        
-        <audio id="bark" src="assets/sounds/dogbark2.mp3"></audio>
+    <audio id="dog" src="assets/sounds/dogbark2.mp3"></audio>
+    <audio id="cat" src="assets/sounds/cat.wav"></audio>
+    <audio id="cow" src="assets/sounds/cow.mp3"></audio>
+    <audio id="elephant" src="assets/sounds/elephant9.mp3"></audio>
+    <audio id="sheep" src="assets/sounds/sheep.mp3"></audio>
+    <audio id="lion" src="assets/sounds/lion.mp3"></audio>
+
 
     <div cards>
             <div class="grid-full">
               <ion-row>
                 <ion-col>
-                  <ion-card button="true" onclick="bark()">
+                  <ion-card button="true" onclick="bark('dog')">
                         <ion-card>
                             <ion-img src="/assets/imgs/perro1.jpeg"></ion-img>
                         </ion-card>
@@ -17,7 +21,7 @@
                 </ion-col>
         
                 <ion-col>
-                    <ion-card button="true" onclick="bark()">
+                    <ion-card button="true" onclick="bark('cat')">
                             <ion-card>
                                 <ion-img src="/assets/imgs/cat1.png"></ion-img>
                             </ion-card>
@@ -25,9 +29,9 @@
                 </ion-col>
         
                 <ion-col>
-                        <ion-card button="true">
+                        <ion-card button="true" onclick="bark('cow')">
                             <ion-card>
-                                <ion-img src="/assets/imgs/vaca1.jpg"></ion-img>
+                                <ion-img src="/assets/imgs/cow2.png"></ion-img>
                             </ion-card>
                         </ion-card>
                 </ion-col>
@@ -36,25 +40,25 @@
 
               <ion-row>
                     <ion-col>
-                      <ion-card button="true">
+                      <ion-card button="true" onclick="bark('elephant')">
                             <ion-card>
-                                <ion-img src="/assets/imgs/elefante1.jpg"></ion-img>
+                                <ion-img src="/assets/imgs/elephant2.png"></ion-img>
                             </ion-card>
                       </ion-card>
                     </ion-col>
             
                     <ion-col>
-                        <ion-card button="true">
+                        <ion-card button="true" onclick="bark('sheep')">
                                 <ion-card>
-                                    <ion-img src="/assets/imgs/tigre1.jpg"></ion-img>
+                                    <ion-img src="/assets/imgs/sheep.png"></ion-img>
                                 </ion-card>
                         </ion-card>
                     </ion-col>
             
                     <ion-col>
-                            <ion-card button="true">
+                            <ion-card button="true" onclick="bark('lion')">
                                 <ion-card>
-                                    <ion-img src="/assets/imgs/leon1.jpg"></ion-img>
+                                    <ion-img src="/assets/imgs/lion2.png"></ion-img>
                                 </ion-card> 
                             </ion-card>
                     </ion-col>
