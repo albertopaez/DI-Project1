@@ -1,37 +1,54 @@
 <ion-content>
     
        
-    <audio id="dog" src="assets/sounds/dogbark2.mp3"></audio>
-    <audio id="cat" src="assets/sounds/cat.wav"></audio>
-    <audio id="cow" src="assets/sounds/cow.mp3"></audio>
-    <audio id="elephant" src="assets/sounds/elephant9.mp3"></audio>
-    <audio id="sheep" src="assets/sounds/sheep.mp3"></audio>
-    <audio id="lion" src="assets/sounds/lion.mp3"></audio>
+    <audio id="dog1" src="assets/sounds/dog1.mp3"></audio>
+    <audio id="dog2" src="assets/sounds/dog2.mp3"></audio>
+
+    <audio id="cat1" src="assets/sounds/cat1.wav"></audio>
+    <audio id="cat2" src="assets/sounds/cat2.mp3"></audio>
+
+
+    <audio id="cow1" src="assets/sounds/cow1.mp3"></audio>
+
+    <audio id="elephant1" src="assets/sounds/elephant1.mp3"></audio>
+
+    <audio id="horse1" src="assets/sounds/horse1.mp3"></audio>
+    <audio id="horse2" src="assets/sounds/horse2.mp3"></audio>
+
+    <audio id="sheep1" src="assets/sounds/sheep1.mp3"></audio>
+
+    <audio id="fox1" src="assets/sounds/fox1.mp3"></audio>
+    <audio id="fox2" src="assets/sounds/fox2.mp3"></audio>
+
+    <audio id="lion1" src="assets/sounds/lion1.mp3"></audio>
+    <audio id="lion2" src="assets/sounds/lion2.mp3"></audio>
+
+    <audio id="canary1" src="assets/sounds/canary1.mp3"></audio>
 
 
     <div cards>
             <div class="grid-full">
               <ion-row>
                 <ion-col>
-                  <ion-card button="true" onclick="bark('dog')">
+                  <ion-card button="true" onclick="bark('dog'+Math.floor((Math.random() * 2) + 1))">
                         <ion-card>
-                            <ion-img src="/assets/imgs/perro1.jpeg"></ion-img>
+                            <ion-img src="/assets/imgs/dog.jpeg"></ion-img>
                         </ion-card>
                   </ion-card>
                 </ion-col>
         
                 <ion-col>
-                    <ion-card button="true" onclick="bark('cat')">
+                    <ion-card button="true" onclick="bark('cat'+Math.floor((Math.random() * 2) + 1))">
                             <ion-card>
-                                <ion-img src="/assets/imgs/cat1.png"></ion-img>
+                                <ion-img src="/assets/imgs/cat.png"></ion-img>
                             </ion-card>
                     </ion-card>
                 </ion-col>
         
                 <ion-col>
-                        <ion-card button="true" onclick="bark('cow')">
+                        <ion-card button="true" onclick="bark('cow'+'1')">
                             <ion-card>
-                                <ion-img src="/assets/imgs/cow2.png"></ion-img>
+                                <ion-img src="/assets/imgs/cow.png"></ion-img>
                             </ion-card>
                         </ion-card>
                 </ion-col>
@@ -40,30 +57,56 @@
 
               <ion-row>
                     <ion-col>
-                      <ion-card button="true" onclick="bark('elephant')">
+                      <ion-card button="true" onclick="bark('elephant'+'1')">
                             <ion-card>
-                                <ion-img src="/assets/imgs/elephant2.png"></ion-img>
+                                <ion-img src="/assets/imgs/elephant.png"></ion-img>
                             </ion-card>
                       </ion-card>
                     </ion-col>
             
                     <ion-col>
-                        <ion-card button="true" onclick="bark('lion')">
+                        <ion-card button="true" onclick="bark('horse'+Math.floor((Math.random() * 2) + 1))">
                             <ion-card>
-                                <ion-img src="/assets/imgs/lion2.png"></ion-img>
+                                <ion-img src="/assets/imgs/horse.png"></ion-img>
                             </ion-card> 
                         </ion-card>
                     </ion-col>
 
                     <ion-col>
-                        <ion-card button="true" onclick="bark('sheep')">
+                        <ion-card button="true" onclick="bark('sheep'+'1')">
                             <ion-card>
                                 <ion-img src="/assets/imgs/sheep.png"></ion-img>
                             </ion-card>
                         </ion-card>
                     </ion-col>
-    
                 </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                      <ion-card button="true" onclick="bark('fox'+Math.floor((Math.random() * 2) + 1))">
+                            <ion-card>
+                                <ion-img src="/assets/imgs/fox.png"></ion-img>
+                            </ion-card>
+                      </ion-card>
+                    </ion-col>
+            
+                    <ion-col>
+                        <ion-card button="true" onclick="bark('lion'+Math.floor((Math.random() * 2) + 1))">
+                            <ion-card>
+                                <ion-img src="/assets/imgs/lion.png"></ion-img>
+                            </ion-card> 
+                        </ion-card>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-card button="true" onclick="bark('canary'+'1')">
+                            <ion-card>
+                                <ion-img src="/assets/imgs/canary.png"></ion-img>
+                            </ion-card>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+                
             </div>
     </div>
 
